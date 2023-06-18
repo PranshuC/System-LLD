@@ -5,20 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5ae7321-cf7b-44f4-9d94-c1b2cb51a3a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scaler/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/01-design-a-pen.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/BallPen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/FountainPen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/GelPen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/Ink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/InkType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/Nib.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/NibType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/Pen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/PenType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/Refill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/RefillType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/RefillablePen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/systems/pen/PenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,9 +54,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "master"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="systems.pen.models" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
