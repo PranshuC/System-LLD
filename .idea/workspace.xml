@@ -5,21 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5ae7321-cf7b-44f4-9d94-c1b2cb51a3a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/01-design-a-pen.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/BallPen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/FountainPen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/GelPen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/Ink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/InkType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/Nib.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/NibType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/Pen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/PenType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/Refill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/RefillType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/pen/models/RefillablePen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/systems/pen/PenTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/tictactoe/TicTacToe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/tictactoe/exceptions/InvalidMoveException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/tictactoe/models/BotLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/systems/tictactoe/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +32,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
   <component name="ProjectId" id="2RMrGfHLfiVGxz11sriWCoLxys4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,13 +49,55 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.24252874",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="systems.tictactoe.models" />
       <recent name="systems.pen.models" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.TicTacToe">
+    <configuration name="TicTacToe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="systems.tictactoe.TicTacToe" />
+      <module name="System-LLD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="systems.tictactoe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardTest.testDimensions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="System-LLD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="systems.tictactoe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="systems.tictactoe" />
+      <option name="MAIN_CLASS_NAME" value="systems.tictactoe.BoardTest" />
+      <option name="METHOD_NAME" value="testDimensions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TicTacToe" />
+        <item itemvalue="JUnit.BoardTest.testDimensions" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -72,5 +109,9 @@
       <updated>1687070696364</updated>
     </task>
     <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
