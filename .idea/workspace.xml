@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5ae7321-cf7b-44f4-9d94-c1b2cb51a3a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/tictactoe/TicTacToe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/tictactoe/exceptions/InvalidMoveException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/systems/tictactoe/models/BotLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/systems/tictactoe/BoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/parkinglot/controllers/ParkingLotController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/parkinglot/controllers/TicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/parkinglot/dtos/CreateLotRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/parkinglot/dtos/IssueTicketRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/parkinglot/repositories/ParkingLotRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/parkinglot/repositories/ParkingSpotRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/parkinglot/repositories/TicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/parkinglot/services/ParkingLotService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/parkinglot/services/ParkingSpotService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/parkinglot/services/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/systems/parkinglot/services/VehicleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +38,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2RMrGfHLfiVGxz11sriWCoLxys4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -53,16 +59,21 @@
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.24252874",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="systems.parkinglot.repositories" />
+      <recent name="systems.parkinglot.services" />
       <recent name="systems.tictactoe.models" />
       <recent name="systems.pen.models" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="systems.parkinglot.models" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.TicTacToe">
+  <component name="RunManager" selected="JUnit.ParkingLotTest">
     <configuration name="TicTacToe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="systems.tictactoe.TicTacToe" />
       <module name="System-LLD" />
@@ -92,14 +103,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ParkingLotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="System-LLD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="systems.parkinglot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="systems.parkinglot" />
+      <option name="MAIN_CLASS_NAME" value="systems.parkinglot.ParkingLotTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParkingLotTest" />
         <item itemvalue="Application.TicTacToe" />
         <item itemvalue="JUnit.BoardTest.testDimensions" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a5ae7321-cf7b-44f4-9d94-c1b2cb51a3a6" name="Changes" comment="" />
