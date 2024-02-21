@@ -1,12 +1,12 @@
 package com.pranshu.bookmyshow.models;
 
 import com.pranshu.bookmyshow.enums.SeatType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Enumerated;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Enumerated;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Getter
 @Entity
@@ -19,7 +19,7 @@ public class Seat extends BaseModel {
     @Enumerated
     private SeatType type;
 
-    public Seat(Date createdAt, Date updatedAt, Integer row, Integer column, SeatType type) {
+    public Seat(LocalDateTime createdAt, LocalDateTime updatedAt, Integer row, Integer column, SeatType type) {
         super(createdAt, updatedAt);
         this.rowNumber = row;
         this.columnNumber = column;

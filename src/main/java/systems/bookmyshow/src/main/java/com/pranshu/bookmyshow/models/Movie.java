@@ -2,14 +2,14 @@ package com.pranshu.bookmyshow.models;
 
 import com.pranshu.bookmyshow.enums.Language;
 import com.pranshu.bookmyshow.enums.MovieFeature;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Enumerated;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -29,7 +29,7 @@ public class Movie extends BaseModel {
     @Enumerated
     private List<MovieFeature> features = new ArrayList<>();
 
-    public Movie(Date createdAt, Date updatedAt, String name, Integer duration,
+    public Movie(LocalDateTime createdAt, LocalDateTime updatedAt, String name, Integer duration,
                  Double rating, List<Language> languages, List<MovieFeature> features) {
         super(createdAt, updatedAt);
         this.name = name;

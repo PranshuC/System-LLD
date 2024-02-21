@@ -1,15 +1,20 @@
 package com.pranshu.bookmyshow.models;
 
 import com.pranshu.bookmyshow.enums.TicketStatus;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import jakarta.persistence.*;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Getter
+@Setter
 @NoArgsConstructor
 @Entity
 public class Ticket extends BaseModel {
@@ -29,7 +34,7 @@ public class Ticket extends BaseModel {
     private TicketStatus status;
 
 
-    public Ticket(Date createdAt, Date updatedAt, Show show, User user, List<ShowSeat> seats, Double amount, TicketStatus status) {
+    public Ticket(LocalDateTime createdAt, LocalDateTime updatedAt, Show show, User user, List<ShowSeat> seats, Double amount, TicketStatus status) {
         super(createdAt, updatedAt);
         this.show = show;
         this.user = user;

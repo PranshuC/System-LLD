@@ -1,15 +1,17 @@
 package com.pranshu.bookmyshow.models;
 
 import com.pranshu.bookmyshow.enums.SeatStatus;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.ManyToOne;
-import java.util.Date;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDateTime;
 
 @Getter
+@Setter
 @NoArgsConstructor
 @Entity
 public class ShowSeat extends BaseModel {
@@ -25,7 +27,7 @@ public class ShowSeat extends BaseModel {
     @ManyToOne
     private Show show;
 
-    public ShowSeat(Date createdAt, Date updatedAt, Double price, SeatStatus status, Seat seat, Show show) {
+    public ShowSeat(LocalDateTime createdAt, LocalDateTime updatedAt, Double price, SeatStatus status, Seat seat, Show show) {
         super(createdAt, updatedAt);
         this.price = price;
         this.status = status;

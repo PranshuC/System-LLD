@@ -5,8 +5,8 @@ import jakarta.persistence.OneToMany;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -19,7 +19,7 @@ public class City extends BaseModel {
     @OneToMany
     private List<Theatre> theatres = new ArrayList<>();
 
-    public City(Date createdAt, Date updatedAt, String name) {
+    public City(LocalDateTime createdAt, LocalDateTime updatedAt, String name) {
         super(createdAt, updatedAt);
         this.name = name;
     }

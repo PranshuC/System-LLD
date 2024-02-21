@@ -1,12 +1,12 @@
 package com.pranshu.bookmyshow.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -23,7 +23,7 @@ public class Theatre extends BaseModel {
     @OneToMany
     private List<Show> shows = new ArrayList<>();
 
-    public Theatre(Date createdAt, Date updatedAt, String name, String address, List<Hall> halls, List<Show> shows) {
+    public Theatre(LocalDateTime createdAt, LocalDateTime updatedAt, String name, String address, List<Hall> halls, List<Show> shows) {
         super(createdAt, updatedAt);
         this.name = name;
         this.address = address;

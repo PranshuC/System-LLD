@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import jakarta.persistence.*;
+
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -35,7 +37,7 @@ public class Show extends BaseModel {
     @OneToMany
     private List<ShowSeat> showSeats = new ArrayList<>();
 
-    public Show(Date createdAt, Date updatedAt, Movie movie, Language language, Date startTime, Date endTime, Hall hall, List<MovieFeature> movieFeatures, List<ShowSeat> showSeats) {
+    public Show(LocalDateTime createdAt, LocalDateTime updatedAt, Movie movie, Language language, Date startTime, Date endTime, Hall hall, List<MovieFeature> movieFeatures, List<ShowSeat> showSeats) {
         super(createdAt, updatedAt);
         this.movie = movie;
         this.language = language;

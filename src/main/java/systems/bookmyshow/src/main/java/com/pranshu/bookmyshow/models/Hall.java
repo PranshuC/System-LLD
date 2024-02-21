@@ -1,14 +1,14 @@
 package com.pranshu.bookmyshow.models;
 
 import com.pranshu.bookmyshow.enums.MovieFeature;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Enumerated;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -22,7 +22,7 @@ public class Hall extends BaseModel {
     @Enumerated
     private List<MovieFeature> features = new ArrayList<>();
 
-    public Hall(Date createdAt, Date updatedAt, Integer hallNumber) {
+    public Hall(LocalDateTime createdAt, LocalDateTime updatedAt, Integer hallNumber) {
         super(createdAt, updatedAt);
         this.hallNumber = hallNumber;
     }
