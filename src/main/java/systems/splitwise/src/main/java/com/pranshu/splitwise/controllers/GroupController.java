@@ -38,7 +38,7 @@ public class GroupController {
         return groupService.settle(id);
     }
 
-    @GetMapping("/{id}/expense")
+    @GetMapping("/ {id}/expense")
     public List<GroupExpense> getExpenses(@PathVariable Long id) {
         return groupService.getExpenses(id);
     }

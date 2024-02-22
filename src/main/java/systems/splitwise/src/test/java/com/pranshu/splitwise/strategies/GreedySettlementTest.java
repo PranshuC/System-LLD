@@ -23,7 +23,8 @@ public class GreedySettlementTest {
 
     @Test
     public void testSettleUp() {
-        List<Expense> expenses = createSimpleExpenses();
+        //List<Expense> expenses = createSimpleExpenses();
+        List<Expense> expenses = createSimpleExpenses2();
         List<SettleUpTransaction> transactions = settlementStrategy.settleExpenses(expenses);
         assertNotEquals("If expenses is not empty, transactions should not be zero", 0, transactions.size());
 

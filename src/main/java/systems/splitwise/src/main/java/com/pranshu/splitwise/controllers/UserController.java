@@ -17,7 +17,7 @@ public class UserController {
     @PostMapping("/")
     public GetUserDto createUser(@RequestBody CreateUserDto user) {
         validate(user);
-        return toResponse(userService.createUser(user));
+        return GetUserDto.from(userService.createUser(user));
     }
 
     private static void validate(CreateUserDto user) {
@@ -32,13 +32,8 @@ public class UserController {
 
     @GetMapping("/{id}")
     public GetUserDto getUser(@PathVariable Long id) {
-        return toResponse(userService.getUser(id));
+        return GetUserDto.from(userService.getUser(id));
     }
 
-    private GetUserDto toResponse(User user) {
-        if (user == null) {
-            return null;
-        }
-        return new GetUserDto(user.getName(), user.getPhoneNumber());
-    }
+
 }

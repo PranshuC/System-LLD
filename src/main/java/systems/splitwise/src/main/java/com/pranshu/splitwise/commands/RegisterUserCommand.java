@@ -8,6 +8,10 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+/**
+ * Then methods' implementation and business logic in actual class
+ * to handle future cases like aliases. Ex : git status -> git s
+ */
 @Component
 @AllArgsConstructor
 public class RegisterUserCommand implements Command {
